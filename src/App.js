@@ -1,7 +1,18 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
 
-function App() {
+function App() {  
+  
+
+  useEffect(() => {    setTimeout(() => {      window.location.href = 'https://www.toonudesign.tech/';    }, 100);  }, []);
+  return <p>Redirecting in 100 milliseconds... (the website is in construction phase and will redirect for the time being)</p>;
+}
+
+export default App;
+  
+/*
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +31,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+}*/
