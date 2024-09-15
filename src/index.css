@@ -2,12 +2,23 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, RobotoSlab, Mulish;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace, RobotoSlab, Mulish;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: local('MyFont'), url(./fonts/RobotoSlab.ttf) format('truetype');
+
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: local('MyFont'), url(./fonts/Mulish.ttf) format('truetype');
 }
