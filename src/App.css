@@ -34,27 +34,49 @@ h1, .h1b, .h1g {
 
 .section {
   height: 100vh;
-}
-
-.navbar {
-  height: 8vh;
+  width: 100%;
   display: flex;
-  object-fit: contain;
-  background-color: var(--black);
-  text-align: center;
+
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 5vw;
 }
 
-button {
-  margin-top: 5rem;
-  font-size: 10rem;
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  object-fit: contain;
+  max-height: 8vh;
+  height: 12vh;
+  width: 100%;
+  background-color: var(--black);
 }
 
-.ScrollButton {
+.bottomBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3vh;
+  min-height: 24px;
+  width: 100%;
+  font-size: 1rem;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--graytransparent);
+  z-index: 63;
+}
+
+.scrollButton {
   display: inline-flex;
+
   padding: 10px 20px;
   border-radius: 10px;
+
   cursor: pointer;
   background-color: var(--yellow);
   color: var(--gray);
@@ -62,23 +84,18 @@ button {
   font-weight: 300;
   font-size: calc(6px + 2vmin);
 }
-.ScrollButton:hover {  background-color: #a08021;}
-.ScrollButton:active {  background-color: var(--white);}
+.scrollButton:hover {  background-color: #a08021;}
+.scrollButton:active {  background-color: var(--white);}
 
-.bottom {
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 3vh;
-  position: fixed;
-  background-color: var(--graytransparent);
-  justify-content: left;
-  z-index: 63;
+.imageContainer {
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  display: flex;
 }
 
-.ImageLink Img {
-  display: inline-flex;
-  max-width: 100%;
-  max-height: 100%;
+.imageLink {
+  width: auto;
+  height: 100%;
   object-fit: contain;
 }
