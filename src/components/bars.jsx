@@ -1,7 +1,7 @@
-import iconMail from './img/mail.svg';
-import iconLinkedIn from './img/linkedIn.svg';
-import iconGitHub from './img/gitHub.svg';
-import iconLogo from './img/logo.svg';
+import iconMail from '../img/mail.svg';
+import iconLinkedIn from '../img/linkedIn.svg';
+import iconGitHub from '../img/gitHub.svg';
+import iconLogo from '../img/logo.svg';
 import * as Element from './elements.jsx';
 
 export function Footer() {

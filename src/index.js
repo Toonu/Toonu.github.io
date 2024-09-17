@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import './App.css';
-import * as Bar from "./bars.jsx"
-import * as Section from "./section.jsx"
-
+import './output.css';
+import * as Bar from "./components/bars.jsx"
+import * as Section from "./components/section.jsx"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
