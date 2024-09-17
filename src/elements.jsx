@@ -30,10 +30,3 @@ export function ImageLink({ link, image, alt, style={}, imgStyle={} }) {
     );
 }
 
-export function Section({ children, isVert=true, style={} }) {
-  const combinedStyle = {
-    flexDirection: isVert ? "column" : "row",
-    ...style
-  };
-  return <section className='section' style={combinedStyle}>{children}</section>
-}

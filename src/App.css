@@ -32,45 +32,6 @@ h1, .h1b, .h1g {
   justify-content: center;
 }
 
-.section {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  gap: 5vw;
-}
-
-.bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  object-fit: contain;
-  max-height: 8vh;
-  height: 12vh;
-  width: 100%;
-  background-color: var(--black);
-}
-
-.bottomBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 3vh;
-  min-height: 24px;
-  width: 100%;
-  font-size: 1rem;
-
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: var(--graytransparent);
-  z-index: 63;
-}
-
 .scrollButton {
   display: inline-flex;
 
