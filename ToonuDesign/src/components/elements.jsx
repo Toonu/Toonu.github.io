@@ -27,7 +27,7 @@ export const ScrollButton = ({ scrollToPosition, label, editStyle={} }) => {
 
 export function ImageLink({ link, image, alt, editStyle={}, imgStyle={} }) {
     return (
-        <a href={link} style={editStyle} class="imageContainer">
+        <a href={link} style={editStyle} className="imageContainer">
             <img src={image} alt={alt} style={imgStyle} className="imageLink" />
         </a>
     );

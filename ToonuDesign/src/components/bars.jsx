@@ -19,7 +19,7 @@ export function Header() {
   }}>
     <div style={{height:"8vh", maxHeight:"12vh", minHeight: "4vh", gap:"1vw", display:"flex", adjustSelf:"center", alignItems:"center", marginRight:"auto"}}>
       <Element.ImageLink link="https://www.toonudesign.tech/" image={iconLogo} alt="Logo"></Element.ImageLink>
-      <a class="h1b" href='https://www.toonudesign.tech/' style={{display:"flex", textDecoration:"none", color:"#fff"}}>Toonu Design</a>
+      <a className="h1b" href='https://www.toonudesign.tech/' style={{display:"flex", textDecoration:"none", color:"#fff"}}>Toonu Design</a>
     </div>
     <div style={{height:"8vh", maxHeight:"12vh", minHeight: "4vh", gap:"2vw", display:"flex", adjustSelf:"center"}}>
       <Element.ScrollButton scrollToPosition={50}   label="Graphics" />
