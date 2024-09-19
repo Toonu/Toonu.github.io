@@ -1,33 +1,10 @@
-export function Flexible({ children, style={}, isVert=true }) {
-    const combinedStyle = {
-        height: "100vh",
-        width: "100%",
-        display: "flex", 
+export function RowFlexible({ children }) {
+  return <section className={ "flex w-full h-screen gap-5 items-center flex-row" }>{children}</section>
+}
 
-        justifyContent: "center",
-        alignItems: "center",
-        gap: "5vw",
-        flexDirection: isVert ? "column" : "row",
-        ...style
-    };
-    return <section style={combinedStyle}>{children}</section>
-  }
+export function ColFlexible({ children }) {
+  return <section className={ "flex w-full h-screen gap-5 items-center flex-col" }>{children}</section>
+}
 
-  export function Box({ children, style={} }) {
-    const combinedStyle = {
-        height: "100vh",
-        width: "100%",
-        ...style
-    };
-    return <section style={combinedStyle}>{children}</section>
-  }
-
-  export function Grid({ children, style={} }) {
-    const combinedStyle = {
-        height: "100vh",
-        width: "100%",
-        display: "grid", 
-        ...style
-    };
-    return <section style={combinedStyle}>{children}</section>
-  }
+export function Box({ children, }) {}
+export function Grid({ children }) {}

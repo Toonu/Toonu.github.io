@@ -3,25 +3,15 @@ import iconLinkedIn from '../img/linkedIn.svg';
 import iconGitHub from '../img/gitHub.svg';
 import iconLogo from '../img/logo.svg';
 import * as Element from './elements.jsx';
+import Headline from './headline.jsx';
 
 export function Header() {
-  return <nav style={{
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-end",
-    alignItems: "center",
-    objectFit: "contain",
-    maxHeight: "12vh",
-    minHeight: "4vh",
-    height: "8vh",
-    width: "100%",
-    backgroundColor: "var(--black)"
-  }}>
-    <div style={{height:"8vh", maxHeight:"12vh", minHeight: "4vh", gap:"1vw", display:"flex", adjustSelf:"center", alignItems:"center", marginRight:"auto"}}>
+  return <nav className="flex flex-row justify-center items-center bg-black w-full min-h-10">
+    <div className="flex gap-5 min-h-10 h-10 items-center mr-auto">
       <Element.ImageLink link="https://www.toonudesign.tech/" image={iconLogo} alt="Logo"></Element.ImageLink>
-      <a className="h1b" href='https://www.toonudesign.tech/' style={{display:"flex", textDecoration:"none", color:"#fff"}}>Toonu Design</a>
+      <Headline href='https://www.toonudesign.tech/'>Toonu Design</Headline>
     </div>
-    <div style={{height:"8vh", maxHeight:"12vh", minHeight: "4vh", gap:"2vw", display:"flex", adjustSelf:"center"}}>
+    <div className="flex gap-5 min-h-10 h-10 items-center ml-auto">
       <Element.ScrollButton scrollToPosition={50}   label="Graphics" />
       <Element.ScrollButton scrollToPosition={100}  label="Apps" />
       <Element.ScrollButton scrollToPosition={150}  label="Get in Touch"/>
