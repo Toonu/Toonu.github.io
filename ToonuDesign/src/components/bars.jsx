@@ -12,9 +12,9 @@ export function Header() {
       <Headline href='https://www.toonudesign.tech/'>Toonu Design</Headline>
     </div>
     <div className="flex gap-5 min-h-10 h-10 items-center ml-auto">
-      <Element.ScrollButton scrollToPosition={50}   label="Graphics" />
-      <Element.ScrollButton scrollToPosition={100}  label="Apps" />
-      <Element.ScrollButton scrollToPosition={150}  label="Get in Touch"/>
+      <Element.ScrollButton scrollToPosition={ 50 } >Graphics</Element.ScrollButton>
+      <Element.ScrollButton scrollToPosition={ 100 } >Apps</Element.ScrollButton>
+      <Element.ScrollButton scrollToPosition={150} >Get in Touch</Element.ScrollButton>
     </div>
   </nav>
 }

@@ -13,6 +13,7 @@ export default {
       "icoy": "#f1c232",
       "gray": "#1c1e22",
       "transgray": "#00000080",
+      "icoydark": "#a08021",
       }
     },
   },
