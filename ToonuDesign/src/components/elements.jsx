@@ -1,19 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const ScrollButton = ({ children, scrollToPosition }) => {
-	const handleScroll = () => {
-		window.scrollTo({
-			top: scrollToPosition,
-			behavior: "smooth",
-		});
-	};
+export const ScrollButton = ({ children, scrollToRef }) => {
 	return (
 		<motion.button
 			className="items-center min-h-10 flex font-light text-body bg-icoy text-gray cursor-pointer px-4 rounded-lg hover:bg-icoydark active:bg-white"
 			whileHover={{ scale: 1.1 }}
 			whileTap={{ scale: 0.9 }}
-			onClick={handleScroll}>
+			onClick={() => scrollToRef.current.scrollIntoView({ behavior: 'smooth' })}>
 			{children}
 		</motion.button>
 	);
