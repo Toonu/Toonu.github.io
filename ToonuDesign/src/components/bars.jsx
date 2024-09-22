@@ -30,34 +30,11 @@ export function Header() {
 
 export function Footer() {
 	return (
-		<div
-			style={{
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-
-				height: '3vh',
-				minHeight: '24px',
-				width: '100%',
-				fontSize: '1rem',
-
-				position: 'fixed',
-				bottom: 0,
-				left: 0,
-				backgroundColor: 'var(--graytransparent)',
-				zIndex: 63,
-			}}>
+		<div className="z-50 flex items-center justify-center text-sm fixed bottom-0 left-0 bg-transgray w-full h-6 min-h-6">
 			<div style={{ flexBasis: '40vw', display: 'flex' }}></div>
 			<div
-				style={{
-					flexBasis: '20vw',
-					display: 'flex',
-					gap: '2vw',
-					justifyContent: 'center',
-					alignItems: 'center',
-					height: '3vh',
-					minHeight: '24px',
-				}}>
+				className="flex gap-5 justify-center items-center min-h-6 h-6"
+				style={{ flexBasis: '20vw' }}>
 				<Element.ImageLink
 					link="mailto:Toonu4@icloud.com"
 					image={iconLinkedIn}
@@ -75,14 +52,9 @@ export function Footer() {
 					alt="GitHub"></Element.ImageLink>
 			</div>
 			<div
+				className="flex gap-5 justify-end items-center min-h-6 h-6 text-xxxs md:text-xxs lg:text-xs"
 				style={{
 					flexBasis: '40vw',
-					display: 'flex',
-					gap: '1vw',
-					justifyContent: 'flex-end',
-					alignItems: 'center',
-					height: '3vh',
-					minHeight: '24px',
 				}}>
 				Copyright © 2024 Toonu Design | All Rights Reserved
 				<Element.ImageLink
@@ -96,22 +68,8 @@ export function Footer() {
 
 export function Spacer() {
 	return (
-		<div
-			style={{
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-				widows: '100%',
-				height: '10px',
-			}}>
-			<div
-				style={{
-					borderStyle: 'solid',
-					borderWidth: '1px 0px 0px 0px',
-					borderColor: '#fff',
-					width: '80vw',
-					height: '80%',
-				}}></div>
+		<div className="flex justify-center items-center w-full h-2">
+			<div className="h-4/5 w-fit border-b border-white border-solid" />
 		</div>
 	);
 }

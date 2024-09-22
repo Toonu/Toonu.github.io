@@ -14,6 +14,10 @@ export default {
       "gray": "#1c1e22",
       "transgray": "#00000080",
       "icoydark": "#a08021",
+      },
+      fontSize: {
+        xxxs: '0.25rem',
+        xxs: '0.5rem',
       }
     },
   },
